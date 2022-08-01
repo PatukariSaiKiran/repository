@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Mart Shopping{% endblock %}
+{% block navbar %}
+{% with active='Help', logged_in=Logged_in %}
+{% include 'navbar.html' %}
+{% endwith %}
+{% endblock %}
+{% block content %}
+<h1>This is the Help Page</h1>
+<h2>Helping you shop online safely</h2>
+{% endblock %}
